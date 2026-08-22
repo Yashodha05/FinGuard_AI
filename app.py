@@ -6,7 +6,7 @@ import os
 import json
 from huggingface_hub import InferenceClient
 
-os.environ["HF_TOKEN"] = "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"
+os.environ["HF_TOKEN"] = "HF_TOKEN"
 
 client = InferenceClient(
     api_key=os.environ["HF_TOKEN"]
