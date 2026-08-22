@@ -6,7 +6,7 @@ import os
 import json
 from huggingface_hub import InferenceClient
 
-os.environ["HF_TOKEN"] = "YOUR_TOKEN_KEY"
+os.environ["HF_TOKEN"] = "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"
 
 client = InferenceClient(
     api_key=os.environ["HF_TOKEN"]
@@ -154,7 +154,7 @@ Instructions:
 """
 
     response = client.chat.completions.create(
-        model="Qwen/Qwen2.5-7B-Instruct",
+        model="deepseek-ai/DeepSeek-V3-0324",
         messages=[
             {
                 "role": "user",
